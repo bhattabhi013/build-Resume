@@ -1,0 +1,234 @@
+\documentclass[%singlesided,
+               doublesided,
+               paper=a4,
+               fontsize=10pt
+              ]{my-resume}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\setmainfont{Carlito}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{darkblue}
+
+\colorlet{headerfontcolor}{white}
+\colorlet{accent}{awesome-red}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\photo[round]{pic_abhi.jpg}{\dimexpr \headerheight-\marginbottom}
+\name{Abhishek Bhatt}
+\tagline{B.TECH CST 
+
+SOPHOMORE | MAHARAJA AGRASEN INSTITUTE OF TECHNOLOGY}
+
+
+\makeheader
+
+\highlightbar{
+
+    \section{Contact}
+    
+    \email {bhattabhi013@gmail.com}
+    \phone{+91 9990410935}
+    \location{Noida}
+    \github{@bhattabhi013}{https://github.com/bhattabhi013}
+    \linkedin{Abhishek Bhatt}{https://www.linkedin.com/in/bhatt-abhi/}
+    \playstore{Abhishek Bhatt}{https://play.google.com/store/apps/developer?id=Abhi+Bhatt}
+     \bigskip
+     
+     
+    \section{Professional Skills}
+     \vspace{0.5em}
+    \skill{JavaScript}{4}
+    \skill{TypeScript}{4}
+    \skill{C++}{3}
+    \skill{DART/ Flutter}{4}
+    
+     \vspace{0.5em}
+    \skillsection{}
+    Git | GitHub | Figma | NodeJs | | CSS | HTML5 | Firebase | Cordova | Google MAPS API | Angular
+    
+    \vspace{1em}
+    \section{Personal Skills}
+    Creative spirit
+    
+    Leadership
+
+    Organized
+
+    Time management
+
+    Team player
+
+    Fast learner
+
+    Motivated
+    
+     \vspace{1em}
+    \section{Interests}
+    Reading, Writing, Podcast, Learning new Technologies.
+
+    
+    \vspace{1em}
+    \section{Languages}
+    \skill{Hindi}{5}
+    \skill{English}{4}
+   
+    
+    
+
+}
+\mainbar{
+    \section{About}
+   Self-motivated, quick learner who believes in upgrading skills and knowledge levels as continuous process to handle new technologies.
+    
+    \section[\faGears]{Experience}
+    \job{Sep 2018 - Nov 2021}
+        {TATA POWER DELHI DISTRIBUTION
+        
+         LIMITED, DELHI}
+        {Software Engineer}
+        {Developed specifications and designs for complex applications or existing applications.
+Development of applications and software using HTML, CSS, JavaScript, angular, react js, mongo db. ionic etc.
+Enhancing performance of the main front-end website, Collaborating with front-end and back-end web developers.}
+    
+      \section{Projects}
+   \project{UMEED - A Plasma Donation Initiative
+   
+   
+   Built a mobile app that acts as a single platform that helps users find donors nearby based on their blood groups and
+preferred location. This app includes Fire base authentication for registering users and Fire base’s
+real-time DB for storing all the donor’s lists and subsequent data.
+The application has 200+ downloads.}
+     \vspace{0.5em}
+     \project{NCC - No Current Complaint
+   
+   Built an App that handles user complaints about electricity issues with Bi-lingual support, Navigation, and other native features (Calling, Camera, Gallery, GPS), etc. }
+   
+    \vspace{0.5em}
+     \project{CAJOMA - Cable Joint Mapping
+   
+  Built an app to mark the underground cable joints on the map, including Google Maps API integration (geocoding, reverse geocoding), native integration (Camera, GPS).}
+    
+    \section[\faMortarBoard]{Education}
+    \job{2021 - 2024}
+        {Maharaja Agrasen Institute of Technology, Delhi}
+        {B.TECH - Computer Science}
+        {}
+    
+    \job{2015 - 2018}
+        {Guru Nanak Dev Institute of Technology , Delhi}
+        {Diploma- ECE}
+        {}
+
+    \section{Achievements, honours and awards}
+    \achievement{Employee of the month - Feb 2021 (TPDDL)}
+    \achievement{Google Hash Code - 2022 (Rank - 3337)}
+
+ 
+
+    \section{Volunteer Experience}
+National Cadet Cops
+
+
+Cleared ”C” certificate examination with an ”A” grade. 
+
+}
+\makebody
+\clearpage
+
+
+\pagestyle{highlightmain}
+
+% The highlightbar needs to be filled to display mainbar contents correctly in singlesised mode
+% For an empty highlightbar, fill with empty space
+\highlightbar{\hfill}
+\mainbar{
+
+    \section{Another section}
+    
+    This page uses the page style \texttt{highlightmain} which shows the highlight bar (gray) and the main part (white background) but omits the header. 
+    The default page style is \texttt{headerhighlightmain} with all three elements.
+    If you don't want header, nor highlight bar, use page style \texttt{\textbackslash pagestyle\{empty\}}.
+    \medskip
+    Neither main, nor highlight bar must be filled to make this template work.
+    It is possible to use a page style with the highlight bar but leave it empty by setting an empty highlightbar \texttt{\textbackslash highlightbar\{\}}.
+
+    \vspace{0.5em}
+    \subsection{Subsection 1}
+    Demonstrate subsections.
+    
+    \subsection{Subsection 2}
+    Subsection are also bold face but a smaller font then section. They also omit the rule.
+    
+
+}
+\makebody
+
+
+\clearpage
+\pagestyle{empty}
+
+\section{Publications}
+\pubforcefullwidth
+
+Demonstrate what an \texttt{\textbackslash pagestyle\{empty\}} page looks like.
+Also show off the macros for publications that uses small icons for authors, date, journal and links.
+
+Achieving a good looking spacing can be tricky. For empty pagestyles where the full width is available use \texttt{\textbackslash pubforcefullwidth} to force the publoication list to take up all the available space.
+The (relative) lengths reserved for date, journal and links can be set with the parameters \texttt{\textbackslash pubdatelength}, \texttt{\textbackslash pubjournallength} and \texttt{\textbackslash publinklength} as in \texttt{\textbackslash setlength\{\textbackslash pubdatelength\}\{0.15 \textbackslash linewidth\}}.
+\bigskip
+
+\publication
+	{The turbulent gas structure in the centers of NGC~253 and the Milky Way} % Title
+	{\textbf{N. Krieger}, A. Bolatto, E. Koch, A. Leroy, E. Rosolowsky, F. Walter, A. Wei\ss, D. Eden, R. Levy, D. Meier, E. Mills, T. Moore, J. Ott, Y. Su, S. Veilleux} % Authors
+	{2020} % Year
+	{The Astrophysical Journal Vol. 899, Issue 2, id.158} % Journal
+	{\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...899..158K}, \arXiv{https://arxiv.org/abs/2008.02518}} % ADS & arxiv links
+
+\publication
+	{The molecular ISM in the Super Star Clusters of the starburst NGC253} % Title
+	{\textbf{N. Krieger}, A. Bolatto, A. Leroy, R. Levy, E. Mills, D. Meier, S. Veilleux, F. Walter, A. Wei\ss} % Authors
+	{2020} % Year
+	{The Astrophysical Journal Vol.897, Issue 2, id.176} % Journal
+	{\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...897..176K}, \arXiv{https://arxiv.org/abs/2006.08262}} % ADS & arxiv links
+
+\publication
+	{The Molecular Outflow in NGC\,253 at a Resolution of Two Parsecs} % Title
+	{\textbf{N. Krieger}, A. Bolatto, F. Walter, A. Leroy, L. Zschaechner, D. Meier, J. Ott, A. Wei\ss, E. Mills, S. Veilleux, M. Gorski} % Authors
+	{2019} % Year
+	{The Astrophysical Journal Vol.881, Issue 1, article id. 43, 20 pp} % Journal
+	{\ADS{https://ui.adsabs.harvard.edu/abs/2019ApJ...881...43K}, \arXiv{https://arxiv.org/abs/1907.00731}} % ADS & arxiv links
+
+\end{document}
