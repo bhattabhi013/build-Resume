@@ -300,9 +300,11 @@
 \newcommand{\location}[1]{\infofield{\faMapMarker}{#1}}
 \newcommand{\phone}[1]{\infofield{\faPhone}{#1}}
 \newcommand{\homepage}[2]{\infofield{\faHome}{\href{#2}{#1}}}
-\newcommand{\linkedin}[2]{\infofield{\faLinkedin}{\href{#2}{#1}}}
+\newcommand{\linkedin}[2]{\infofield{\faLinkedinSquare}{\href{#2}{#1}}}
 \newcommand{\github}[2]{\infofield{\faGithub}{\href{#2}{#1}}}
 \newcommand{\playstore}[2]{\infofield{\faAndroid}{\href{#2}{#1}}}
+\newcommand{\stack}[2]{\infofield{\faStackOverflow}{\href{#2}{#1}}}
+\newcommand{\twitter}[2]{\infofield{\faTwitterSquare}{\href{#2}{#1}}}
 \newcommand{\ads}[2]{\infofield{\aiADS}{\href{#2}{#1}}}
 
 
